@@ -9,10 +9,10 @@ export default function Header() {
   const [height, setHeight] = useState(545.6);
 
   window.addEventListener("resize", () => setWidth(window.innerWidth));
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   setWidth( window.innerWidth)
-  // })
+    setWidth( window.innerWidth)
+  },[])
   window.addEventListener("resize", () =>
     setHeight(document.getElementsByClassName("headerform")[0].clientHeight)
   );
