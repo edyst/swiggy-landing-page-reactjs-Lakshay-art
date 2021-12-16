@@ -15,7 +15,7 @@ export default function Animation() {
     useEffect(() => {
         const interval = setInterval(() => {
             seti((i+1)%6);
-        }, 2000);
+        }, 0);
         return () => clearInterval(interval);
       },[h11] );
 
@@ -24,7 +24,7 @@ export default function Animation() {
         
         const interval1 = setInterval(() => {console.log(i);
            seth11(arr[i]) ;
-        }, 1500);
+        }, 3500);
         return () => clearInterval(interval1);
       },[i] );
       
@@ -41,7 +41,7 @@ export default function Animation() {
       
         const interval2 = setInterval(() => {
                document.getElementById("ani").classList.add("animate-bottom");
-                }, 0);
+                }, 10);
         document.getElementById("ani").classList.remove("animate-bottom");
         return () => clearInterval(interval2);
       },[h11] );

@@ -54,7 +54,7 @@ export default function Header() {
   // })
 
   const inputcheck = () => {
-    if (ref.current.value != "") {
+    if (ref.current.value !== "") {
       document.getElementsByClassName("clear")[0].classList.remove("hide");
       document.getElementsByClassName("clear1")[0].classList.remove("hide");
       document.getElementsByClassName("clear1")[0].classList.add("unhide");
@@ -67,7 +67,7 @@ export default function Header() {
     }
   };
   const SaveData = () => {
-    if (ref.current.value == "") $(".redDiv").slideDown("slow");
+    if (ref.current.value === "") $(".redDiv").slideDown("slow");
     //document.getElementsByClassName("redDiv")[0].classList.remove("hide")
     else {
       $(".redDiv").slideUp("slow");

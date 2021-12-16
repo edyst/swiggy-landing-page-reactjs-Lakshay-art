@@ -1,15 +1,13 @@
 import './App.css';
 import Header from './components/Header';
 
-import { useState } from 'react';
+
 import FeatureSection from './components/FeatureSection';
 import PocketSection from './components/PocketSection';
 import CitySection from './components/CitySection.js';
 import ActionSection from './components/ActionSection';
 import Footer from './components/Footer';
-import Slider from './components/Slider';
-import SignIn from './components/SignIn';
-import Login from './components/Login';
+
 // import LogIn from './components/LogIn';
 
 function App (){
